@@ -1,0 +1,136 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e15]:
+          - generic [ref=e51]:
+            - generic [ref=e54]: Make a simple sign-up form with email, password, and a submit button
+            - img [ref=e57]
+          - generic [ref=e60]:
+            - img [ref=e63]
+            - generic [ref=e68]:
+              - generic [ref=e71]: str_replace_editor
+              - separator [ref=e72]
+              - paragraph [ref=e74]: Done! Created a sign-up form with email and password fields, plus a submit button. It includes form validation, a success message, and is styled with Tailwind CSS.
+        - generic [ref=e23]:
+          - textbox "Describe the React component you want to create..." [ref=e24]
+          - button [disabled] [ref=e25]:
+            - img [ref=e26]
+    - separator [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - tablist [ref=e34]:
+          - tab "Preview" [ref=e35]
+          - tab "Code" [active] [selected] [ref=e36]
+        - generic [ref=e37]:
+          - button "Sign In" [ref=e38]
+          - button "Sign Up" [ref=e39]
+      - generic [ref=e76]:
+        - generic [ref=e84] [cursor=pointer]:
+          - img [ref=e85]
+          - generic [ref=e90]: App.jsx
+        - separator [ref=e91]
+        - code [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e99]:
+              - generic [ref=e102]: "1"
+              - generic [ref=e104]: "2"
+              - generic [ref=e105]:
+                - generic [ref=e106] [cursor=pointer]: 
+                - generic [ref=e107]: "3"
+              - generic [ref=e109]: "4"
+              - generic [ref=e111]: "5"
+              - generic [ref=e113]: "6"
+              - generic [ref=e115]: "7"
+              - generic [ref=e116]:
+                - generic [ref=e117] [cursor=pointer]: 
+                - generic [ref=e118]: "8"
+              - generic [ref=e120]: "9"
+              - generic [ref=e122]: "10"
+              - generic [ref=e124]: "11"
+              - generic [ref=e126]: "12"
+              - generic [ref=e128]: "13"
+              - generic [ref=e130]: "14"
+              - generic [ref=e132]: "15"
+              - generic [ref=e133]:
+                - generic [ref=e134] [cursor=pointer]: 
+                - generic [ref=e135]: "16"
+              - generic [ref=e136]:
+                - generic [ref=e137] [cursor=pointer]: 
+                - generic [ref=e138]: "17"
+              - generic [ref=e140]:
+                - generic [ref=e141] [cursor=pointer]: 
+                - generic [ref=e142]: "18"
+              - generic [ref=e145]: "19"
+              - generic [ref=e148]: "20"
+              - generic [ref=e149]:
+                - generic [ref=e150] [cursor=pointer]: 
+                - generic [ref=e151]: "21"
+              - generic [ref=e152]:
+                - generic [ref=e153] [cursor=pointer]: 
+                - generic [ref=e154]: "22"
+              - generic [ref=e157]: "23"
+              - generic [ref=e159]: "24"
+              - generic [ref=e161]: "25"
+              - generic [ref=e163]: "26"
+              - generic [ref=e164]:
+                - generic [ref=e165] [cursor=pointer]: 
+                - generic [ref=e166]: "27"
+              - generic [ref=e168]:
+                - generic [ref=e169] [cursor=pointer]: 
+                - generic [ref=e170]: "28"
+              - generic [ref=e171]:
+                - generic [ref=e172] [cursor=pointer]: 
+                - generic [ref=e173]: "29"
+              - generic [ref=e176]: "30"
+              - generic [ref=e178]: "31"
+              - generic [ref=e179]:
+                - generic [ref=e180] [cursor=pointer]: 
+                - generic [ref=e181]: "32"
+              - generic [ref=e183]: "33"
+              - generic [ref=e185]: "34"
+              - generic [ref=e187]: "35"
+            - generic [ref=e378]:
+              - generic [ref=e380]: "import { useState } from 'react';"
+              - generic [ref=e383]: "export default function SignUpForm() {"
+              - generic [ref=e385]: const [email, setEmail] = useState('');
+              - generic [ref=e387]: const [password, setPassword] = useState('');
+              - generic [ref=e389]: const [submitted, setSubmitted] = useState(false);
+              - generic [ref=e392]: "const handleSubmit = (e) => {"
+              - generic [ref=e394]: e.preventDefault();
+              - generic [ref=e396]: setSubmitted(true);
+              - generic [ref=e398]: setEmail('');
+              - generic [ref=e400]: setPassword('');
+              - generic [ref=e402]: setTimeout(() => setSubmitted(false), 3000);
+              - generic [ref=e404]: "};"
+              - generic [ref=e407]: return (
+              - generic [ref=e409]: <div className="flex items-center justify-center
+              - generic [ref=e411]: min-h-screen bg-gray-100">
+              - generic [ref=e413]: <div className="bg-white p-8 rounded-lg
+              - generic [ref=e415]: shadow-md w-full max-w-md">
+              - generic [ref=e417]: <h1 className="text-2xl font-bold mb-6
+              - generic [ref=e419]: text-gray-800">Sign Up</h1>
+              - generic [ref=e423]: "{submitted && ("
+              - generic [ref=e425]: <div className="mb-4 p-3 bg-green-100
+              - generic [ref=e427]: text-green-700 rounded">
+              - generic [ref=e429]: Account created successfully!
+              - generic [ref=e431]: </div>
+              - generic [ref=e433]: ")}"
+              - generic [ref=e436]: "<form onSubmit={handleSubmit}"
+              - generic [ref=e438]: className="space-y-4">
+              - generic [ref=e440]: <div>
+              - generic [ref=e442]: <label className="block text-sm
+              - generic [ref=e444]: font-medium text-gray-700 mb-1">
+              - generic [ref=e446]: Email
+              - generic [ref=e448]: </label>
+              - generic [ref=e450]: <input
+              - generic [ref=e452]: type="email"
+              - generic [ref=e454]: "value={email}"
+              - generic [ref=e456]: "onChange={(e) => setEmail(e.target."
+              - generic [ref=e458]: "value)}"
+            - textbox "Editor content" [ref=e460]
+  - alert [ref=e50]
+  - generic [ref=e461]:
+    - alert
+    - alert
